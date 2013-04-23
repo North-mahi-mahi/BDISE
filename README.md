@@ -6,7 +6,6 @@ Installation de votre VM :
 ```
 wget https://raw.github.com/jlerpscher/BDISE/master/install-ubuntu.sh
 sh install-ubuntu.sh
-gem install rails
 ```
 
 Pendant ce temps, amusons-nous !
@@ -80,4 +79,22 @@ a = %w(foo bar test hello)
 b = %w(foo hello)
 a - b
 => ["bar", "test"]
+```
+
+Allons-y !
+======
+
+Création d'une nouvelle application
+```
+rails new cvcollect
+```
+
+Démarrage du serveur
+```
+rails s
+```
+
+Notre nouvelle application est disponible ici :
+```
+http://localhost:3000
 ```
