@@ -6,6 +6,7 @@ Installation de votre VM :
 ```
 wget https://raw.github.com/jlerpscher/BDISE/master/install-ubuntu.sh
 sh install-ubuntu.sh
+gem install rails
 ```
 
 Pendant ce temps, amusons-nous !
