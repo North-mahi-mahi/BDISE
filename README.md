@@ -1,6 +1,14 @@
 TP BDISE
 =====
 
+Objectif séance 1:
+- Création de binomes
+- Installation de votre environnement
+- Création d'un compte Github
+- Génération d'une nouvelle application
+- Commit de l'application
+
+
 Installation de votre VM :
 
 ```
