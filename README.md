@@ -12,8 +12,7 @@ Objectif séance 1:
 Installation de votre VM :
 
 ```
-wget https://raw.github.com/jlerpscher/BDISE/master/install-ubuntu.sh
-sh install-ubuntu.sh
+wget -q -O - "$@" https://raw.github.com/jlerpscher/BDISE/master/install-ubuntu.sh | bash
 ```
 
 Pendant ce temps, amusons-nous !
