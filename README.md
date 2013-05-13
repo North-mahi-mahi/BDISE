@@ -1,7 +1,7 @@
 TP BDISE
 =====
 
-Objectif séance 1 :
+Objectifs séance 1 :
 =====
 - Création de binomes
 - Installation de votre environnement
@@ -107,7 +107,7 @@ Notre nouvelle application est disponible ici :
 http://localhost:3000
 ```
 
-Objectif séance 2 :
+Objectifs séance 2 :
 =====
 
 - Installer quelques gems
