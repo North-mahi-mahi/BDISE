@@ -2,6 +2,7 @@ TP BDISE
 =====
 
 Objectif séance 1 :
+=====
 - Création de binomes
 - Installation de votre environnement
 - Création d'un compte Github
@@ -107,6 +108,8 @@ http://localhost:3000
 ```
 
 Objectif séance 2 :
+=====
+
 - Installer quelques gems
 - Apprendre à utiliser le fichier routes.rb
 - Créer notre première vue
