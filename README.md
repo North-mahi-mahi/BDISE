@@ -1,7 +1,7 @@
 TP BDISE
 =====
 
-Objectif séance 1:
+Objectif séance 1 :
 - Création de binomes
 - Installation de votre environnement
 - Création d'un compte Github
@@ -104,4 +104,22 @@ rails s
 Notre nouvelle application est disponible ici :
 ```
 http://localhost:3000
+```
+
+Objectif séance 2 :
+- Installer quelques gems
+- Apprendre à utiliser le fichier routes.rb
+- Créer notre première vue
+- Créer notre premier controleur
+- Créer notre premier modèle avec notre première migration
+- Déployer notre nouvelle application dans le cloud
+
+Pour commencer, voici la liste des gems à installer :
+
+```
+haml
+sass-rails
+bourbon
+will_paginate
+rails-i18n
 ```
