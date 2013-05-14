@@ -171,3 +171,38 @@ Créer une nouvelle vue index.html.haml dans le dossier app/views/pages
 ```
 = t('.welcome')
 ```
+
+Modifié le fichier config/locales/en.yml :
+```
+en:
+  pages:
+    index:
+      welcome: "Welcome!"
+```
+
+
+Créer un nouveau fichier de traduction appelé fr.yml dans config/locales :
+```
+fr:
+  pages:
+    index:
+      welcome: "Bienvenue !"
+```
+
+Dans le fichier routes, ajouter la contrainte locale :
+```
+Cvcollect::Application.routes.draw do
+
+  scope ':locale', :constraints => { :locale => /fr|en/ } do
+    root :to => 'pages#index' 
+  end
+
+  root :to => 'pages#index'
+  
+end
+```
+
+Dans le fichier config/application.rb, mettre la locale par défaut à fr (décommenter ligne 34) :
+```
+config.i18n.default_locale = :fr
+```
