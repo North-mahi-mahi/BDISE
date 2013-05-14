@@ -99,6 +99,7 @@ rails new cvcollect
 
 Démarrage du serveur
 ```
+cd cvcollect
 rails s
 ```
 
@@ -123,12 +124,50 @@ Objectifs séance 2 :
 - Créer notre premier modèle avec notre première migration
 - Déployer notre nouvelle application dans le cloud
 
-Pour commencer, voici la liste des gems à installer :
+Pour commencer, voici la liste des gems à ajouter dans le Gemfile :
 
 ```
-haml
-sass-rails
-bourbon
-will_paginate
-rails-i18n
+gem 'sqlite3'
+gem 'haml'
+gem 'bourbon'
+gem 'will_paginate'
+gem 'rails-i18n'
+```
+
+Pour les installer, on utilise la commande :
+```
+bundle
+```
+
+Suppression de la page par défaut de rails : 
+```
+rm public/index.html
+```
+
+Création de notre première route :
+```
+root :to => 'pages#index'
+```
+
+Création de notre controlleur pages :
+```
+rails g controller pages
+```
+
+Renommer le fichiers scss généré en sass :
+```
+mv app/assets/stylesheets/pages.css.scss app/assets/stylesheets/pages.css.sass
+```
+
+Créer l'action index du controlleur pages :
+```
+class PagesController < ApplicationController
+  def index
+  end
+end
+```
+
+Créer une nouvelle vue index.html.haml dans le dossier app/views/pages
+```
+= t('.welcome')
 ```
