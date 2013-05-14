@@ -121,8 +121,6 @@ Objectifs séance 2 :
 - Apprendre à utiliser le fichier routes.rb
 - Créer notre première vue
 - Créer notre premier controleur
-- Créer notre premier modèle avec notre première migration
-- Déployer notre nouvelle application dans le cloud
 
 Pour commencer, voici la liste des gems à ajouter dans le Gemfile :
 
@@ -220,4 +218,16 @@ class ApplicationController < ActionController::Base
 end
 ```
 
+Votre application est disponible en français ou en anglais aux adresses :
+```
+localhost:3000/fr
+localhost:3000/en
+```
+
 N'oubliez pas de commiter et de pusher votre travail !!!
+
+
+Objectifs séance 3 :
+=====
+
+Déployer notre application
