@@ -206,3 +206,18 @@ Dans le fichier config/application.rb, mettre la locale par défaut à fr (déco
 ```
 config.i18n.default_locale = :fr
 ```
+
+Ajouter un before filter permettant de setter la locale (app/controllers/application_controller.rb :
+```
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+
+  before_filter :set_locale
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end
+end
+```
+
+N'oubliez pas de commiter et de pusher votre travail !!!
