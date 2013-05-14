@@ -230,4 +230,14 @@ N'oubliez pas de commiter et de pusher votre travail !!!
 Objectifs séance 3 :
 =====
 
+Créer notre première page
+Créer notre premier modèle
+Créer notre première migration
 Déployer notre application
+
+
+Travail à faire :
+
+- Sur la page index, ajouter un lien permettant de changer de langue. Le lien doit envoyer vers l'anglais si nous sommes en français et vers le français si nous commes en anglais.
+- 
+
