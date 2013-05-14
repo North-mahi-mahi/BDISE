@@ -107,6 +107,12 @@ Notre nouvelle application est disponible ici :
 http://localhost:3000
 ```
 
+Pour les étudiants ayant un message d'erreur au démarrage de l'application :
+```
+sudo apt-get install libv8-dev
+```
+
+
 Objectifs séance 2 :
 =====
 
