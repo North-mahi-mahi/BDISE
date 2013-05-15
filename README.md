@@ -282,6 +282,18 @@ Vous pouvez maintenant déployer votre application sur Heroku
 Téléchargez l'outil heroku : https://toolbelt.heroku.com/
 ```
 
+Ajoutez la gem pg dans un groupe de production :
+
+```
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+```
+
 ```
 heroku create
 git remote add heroku git@heroku........ <==== A COMPLETER
