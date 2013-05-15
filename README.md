@@ -238,6 +238,30 @@ Déployer notre application
 
 Travail à faire :
 
-- Sur la page index, ajouter un lien permettant de changer de langue. Le lien doit envoyer vers l'anglais si nous sommes en français et vers le français si nous commes en anglais.
-- 
+1- Sur la page index, ajouter un lien permettant de changer de langue. Le lien doit envoyer vers l'anglais si nous sommes en français et vers le français si nous commes en anglais.
 
+2- Installer la gem Devise (https://github.com/plataformatec/devise), pour cela, aidez-vous du "Getting started" disponible sur la page Github :
+```
+gem 'devise' (dans votre Gemfile)
+bundle
+rails g devise:install
+rails g devise User
+rake db:migrate
+```
+
+Ajouter la ligne suivante dans config/environments/development.rb
+```
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+```
+ 
+
+Dans le layout (app/views/layouts/application.html.erb) que vous pouvez, si vous le souhaitez, convertir en haml, ajouter les lignes suivantes après l'ouverture de <body> :
+```
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+```
+
+Enfin, dans le fichier config/application.rb, ajouter la ligne :
+```
+config.assets.initialize_on_precompile = false
+```
