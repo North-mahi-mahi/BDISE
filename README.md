@@ -265,3 +265,26 @@ Enfin, dans le fichier config/application.rb, ajouter la ligne :
 ```
 config.assets.initialize_on_precompile = false
 ```
+
+Créer le controleur users
+
+Protégez la page pour voir un utilisateur par une authentification
+
+Créer une vue index pour users qui affichera une liste de tous les utilisateurs
+
+Créer une vue show pour user qui affichera un utilisateur
+
+N'oubliez pas de commiter et de pusher votre travail.
+
+
+Vous pouvez maintenant déployer votre application sur Heroku
+```
+Téléchargez l'outil heroku : https://toolbelt.heroku.com/
+```
+
+```
+heroku create
+git push heroku master
+
+```
+
