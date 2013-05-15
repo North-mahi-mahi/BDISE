@@ -268,6 +268,8 @@ config.assets.initialize_on_precompile = false
 
 Créer le controleur users
 
+Créer la route pour users
+
 Protégez la page pour voir un utilisateur par une authentification
 
 Créer une vue index pour users qui affichera une liste de tous les utilisateurs
