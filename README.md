@@ -284,7 +284,9 @@ Téléchargez l'outil heroku : https://toolbelt.heroku.com/
 
 ```
 heroku create
+git remote add heroku git@heroku........ <==== A COMPLETER
 git push heroku master
 
 ```
+
 
